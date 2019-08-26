@@ -1,0 +1,36 @@
+{
+  "name": "graphql-modules-apollo-server-starter-kit",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/jenishchandracim/graphql-modules-apollo-server-starter-kit",
+  "author": "Jenish Chandracim",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "lint": "eslint ./",
+    "test": "jest --passWithNoTests"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint && cross-env CI=true npm run test"
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "cross-env": "^5.2.0",
+    "eslint": "6.1.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^2.2.0",
+    "jest": "^24.7.1"
+  },
+  "dependencies": {
+    "@graphql-modules/core": "^0.7.0",
+    "apollo-server": "^2.9.0",
+    "fs-extra": "^8.0.1",
+    "graphql": "^14.1.1",
+    "graphql-import": "^0.7.1",
+    "lodash.get": "^4.4.2",
+    "rxjs": "^6.4.0"
+  }
+}
