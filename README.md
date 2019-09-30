@@ -1,4 +1,4 @@
-# react-storybook-rollup-starter-kit
+# graphql-modules-apollo-server-starter-kit
 
 This project is to be used as a template/starter-kit for building GraphQL APIs using both GraphQL modules and Apollo Server.
 
